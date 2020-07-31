@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>You first Spring application</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 <p><a href="/hello">Greet the world!</a></p>
@@ -12,6 +12,38 @@
         <label for="nameField">How should the app call you?</label>
         <input name="myName" id="nameField">
         <button>Greet me!</button>
+    </div>
+</form>
+
+<form action="/add" method="POST">
+    <p>Let's add a customer.</p>
+
+    <div>
+        <label for="firstName">First name:</label>
+        <input name="userAgent" id="firstName" value="Homer">
+    </div>
+    <div>
+        <label for="lastName">Last name:</label>
+        <input name="content" id="lastName" value="Simpson">
+    </div>
+    <div>
+        <button>Add user</button>
+    </div>
+</form>
+
+<form action="/list" method="get">
+    <div>
+        <button>List log</button>
+    </div>
+</form>
+
+<form action="/find/{id}" method="get">
+    <div>
+        <label for="lastName">Index:</label>
+        <input name="content" id="id" value="2">
+    </div>
+    <div>
+        <button>Find user</button>
     </div>
 </form>
 </body>
